@@ -12,3 +12,5 @@ git clone https://github.com/flightaware/dump1090.git
 cd /root/dump1090
 dpkg-buildpackage -b --no-sign
 dpkg -i ../dump1090-fa_*.deb
+
+nano /etc/default/dump1090-fa

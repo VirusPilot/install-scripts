@@ -1,6 +1,8 @@
 #!/bin/bash
 #set -x
 
+# install-rtl-sdr.sh needs to be run in advance
+
 cd /root
 rm -rf /root/dump1090
 

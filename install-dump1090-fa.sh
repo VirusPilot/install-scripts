@@ -2,7 +2,7 @@
 #set -x
 
 echo "install-rtl-sdr.sh needs to be run in advance"
-read -p "Press return to continue"
+read -p "Press return to continue or exit (Ctrl-C)"
 
 cd /root
 rm -rf /root/dump1090

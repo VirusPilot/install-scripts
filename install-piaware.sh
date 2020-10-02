@@ -1,5 +1,4 @@
-
-# besides piaware this includes dump1090, fa-mlat-client, faup1090
+# besides piaware this includes dump1090, fa-mlat-client, faup1090, dump978
 
 wget https://flightaware.com/adsb/piaware/files/packages/pool/piaware/p/piaware-support/piaware-repository_4.0_all.deb
 sudo dpkg -i piaware-repository_4.0_all.deb

@@ -1,4 +1,3 @@
-
 sudo su
 cd /root
 rm -rf /root/kalibrate-rtl

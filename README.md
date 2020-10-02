@@ -24,7 +24,7 @@ This is the basis for the most popular ADS-B feeders like SkyAware, PlaneFinder,
 ## kalibrate-sdr
 source: https://github.com/steve-m/kalibrate-rtl
 
-This is a tool to aquire the appropriate ppm setting for the SDRs
+This is a tool to aquire the appropriate ppm setting for the SDRs. In order to access the SDRs, all relevant processes like dump1090 need to be stopped.
 
 ## piaware
 source: https://flightaware.com/adsb/piaware/install

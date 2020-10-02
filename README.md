@@ -2,6 +2,15 @@
 
 This is a collection of scripts to complement my other air-traffic related repositories, some of them are quite fundamental, some are optional
 
+## usage examples
+```
+sudo su
+cd /home
+apt update
+./install-scripts/install-rtl-sdr
+./install-scripts/install-dump1090-fa
+...
+```
 ## rtl-sdr
 source: https://github.com/osmocom/rtl-sdr
 
@@ -25,4 +34,4 @@ This is a full setup suite that besides piaware installs dump1090, fa-mlat-clien
 ## PlaneFinder
 source: https://forum.planefinder.net/threads/raspberry-pi-b-zero-rpi2-rpi3-rpi4-installation-instructions-for-raspbian-dump1090-data-feeder.241/
 
-This is one of the popular ADS-B Feeders which is particularly interesting as it also receives traffic from the OGN network
+This is one of the popular ADS-B Feeders which is particularly interesting as it also displays traffic from the OGN network

@@ -1,4 +1,6 @@
-sudo su
+#!/bin/bash
+#set -x
+
 cd /root
 rm -rf /root/dump1090
 

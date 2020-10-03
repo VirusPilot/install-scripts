@@ -14,7 +14,9 @@ cd /root/dump1090
 dpkg-buildpackage -b --no-sign
 dpkg -i ../dump1090-fa_*.deb
 
-echo "now the dump1090-fa config file needs to be edited"
+echo
+echo "now the dump1090-fa config file needs to be edited, e.g. --device-index and --ppm"
 read -p "Press return to continue"
+echo
 
 nano /etc/default/dump1090-fa

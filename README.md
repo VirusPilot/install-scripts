@@ -9,11 +9,11 @@ apt update
 sudo apt install --yes git
 git clone https://github.com/VirusPilot/install-scripts.git
 ```
-## setting up a system for your local airport controller including a FlightAware feed
+## example: setting up a unified traffic map for your local airport controller including a FlightAware feed
 ```
 sudo apt update
 sudo apt install --yes git
-git clone https://github.com/b3nn0/ogn2dump1090.git
+git clone https://github.com/b3nn0/ogn2dump1090.git (see https://github.com/b3nn0/ogn2dump1090)
 cd ogn2dump1090
 ./install.sh
 
@@ -23,7 +23,7 @@ sudo su
 ./install-scripts/install-piaware
 ...
 ```
-Now you should see all ADS-B and OGN on one local map, OGN will be displayed as MLAT: http://raspberrypi/dump1090-fa/.
+Now you should see all ADS-B and OGN traffic on one unified map, OGN will be displayed as MLAT: http://raspberrypi/dump1090-fa/.
 
 Furthermore you may register your FlightAware feeder client here: https://flightaware.com/adsb/piaware/claim.
 

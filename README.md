@@ -2,15 +2,31 @@
 
 This is a collection of scripts to complement my other air-traffic related repositories, some of them are quite fundamental, some are optional.
 
-## usage examples
+## prepare
 ```
 sudo su
-cd ~/
 apt update
-./install-scripts/install-rtl-sdr
-./install-scripts/install-dump1090-fa
+sudo apt install --yes git
+git clone https://github.com/VirusPilot/install-scripts.git
+```
+## setting up a system for your local airport controller including a FlightAware feed
+```
+sudo apt update
+sudo apt install --yes git
+git clone https://github.com/b3nn0/ogn2dump1090.git
+cd ogn2dump1090
+./install.sh
+
+(automatic reboot)
+
+sudo su
+./install-scripts/install-piaware
 ...
 ```
+Now you should see all ADS-B and OGN on one local map, OGN will be displayed as MLAT: http://raspberrypi/dump1090-fa/.
+
+Furthermore you may register your FlightAware feeder client here: https://flightaware.com/adsb/piaware/claim.
+
 ## rtl-sdr
 source: https://github.com/osmocom/rtl-sdr
 
@@ -19,7 +35,7 @@ This is the most fundamental one which is required for all other SDR based appli
 ## dump1090-fa
 source: https://github.com/flightaware/dump1090
 
-This is required for ADS-B feeders like SkyAware, PlaneFinder, FlightRadar24, ADS-B Exchange.
+This is required for ADS-B feeders like FlightAware, PlaneFinder, FlightRadar24, ADS-B Exchange.
 
 ## kalibrate-sdr
 source: https://github.com/steve-m/kalibrate-rtl
@@ -29,7 +45,7 @@ This is a tool to determine the appropriate ppm value for the SDRs. In order to 
 ## piaware
 source: https://flightaware.com/adsb/piaware/install
 
-This is the PiAware setup suite that besides piaware installs dump1090, fa-mlat-client, faup1090 and dump978.
+This is the FlightAware setup suite that besides piaware installs dump1090, fa-mlat-client, faup1090 and dump978.
 
 ## PlaneFinder
 source: https://forum.planefinder.net/threads/raspberry-pi-b-zero-rpi2-rpi3-rpi4-installation-instructions-for-raspbian-dump1090-data-feeder.241/

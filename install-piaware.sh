@@ -21,4 +21,4 @@ echo "Please note: if not already previously installed, dump1090-fa will now be 
 echo
 read -p "Press any key to continue or exit (Ctrl-C)"
 
-apt-get install dump1090-fa
+apt install dump1090-fa

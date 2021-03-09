@@ -29,6 +29,18 @@ Now you should see all ADS-B and OGN traffic on one unified map, OGN will be dis
 
 Furthermore you may register your FlightAware feeder client here: https://flightaware.com/adsb/piaware/claim.
 
+## OGN Tracker
+source: https://github.com/pjalocha/esp32-ogn-tracker
+
+```
+cd esp32-ogn-tracker
+nano main/config.h (enable/disable certain features like OLED or WiFi)
+source ~/esp-idf/export.sh (build preparation)
+stxstop (in case the tracker is connected to Stratux)
+make (just compiling)
+make flash (compiling and flashing)
+```
+
 ## rtl-sdr
 source: https://github.com/osmocom/rtl-sdr
 

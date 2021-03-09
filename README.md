@@ -15,10 +15,14 @@ git clone https://github.com/VirusPilot/install-scripts.git
 ## OGN Tracker (intended to be installed on top of a Stratux Europe Edition)
 source: https://github.com/pjalocha/esp32-ogn-tracker
 
-This script installs and sets up the development environment to compile and flash the OGN tracker (e.g. T-BEAM)
+This script installs and sets up the development environment
 
 ```
 ./install-scripts/install-OGN-tracker
+```
+
+These are the steps to compile and flash the OGN tracker (e.g. T-BEAM)
+```
 cd esp32-ogn-tracker
 nano main/config.h (enable/disable certain features like OLED or WiFi)
 source ~/esp-idf/export.sh (build preparation)

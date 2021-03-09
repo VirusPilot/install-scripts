@@ -15,4 +15,3 @@ git clone https://github.com/olikraus/u8g2.git
 
 cd
 git clone https://github.com/pjalocha/esp32-ogn-tracker.git
-

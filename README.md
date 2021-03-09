@@ -29,7 +29,7 @@ Now you should see all ADS-B and OGN traffic on one unified map, OGN will be dis
 
 Furthermore you may register your FlightAware feeder client here: https://flightaware.com/adsb/piaware/claim.
 
-## OGN Tracker
+## OGN Tracker (intended to be installed on top of a Stratux Europe Edition)
 source: https://github.com/pjalocha/esp32-ogn-tracker
 
 ```

@@ -15,6 +15,8 @@ git clone https://github.com/VirusPilot/install-scripts.git
 ## OGN Tracker (intended to be installed on top of a Stratux Europe Edition)
 source: https://github.com/pjalocha/esp32-ogn-tracker
 
+This script installs and sets up the development environment to compile and flash the OGN tracker (e.g. T-BEAM)
+
 ```
 ./install-scripts/install-OGN-tracker
 cd esp32-ogn-tracker
@@ -28,7 +30,7 @@ make flash (compiling and flashing)
 ## rtl-sdr
 source: https://github.com/osmocom/rtl-sdr
 
-This is the most fundamental one which is required for all other SDR based applications.
+This script installs the SDR driver library which is required for all other SDR based applications.
 
 ```
 ./install-scripts/install-rtl-sdr
@@ -37,7 +39,7 @@ This is the most fundamental one which is required for all other SDR based appli
 ## dump1090-fa
 source: https://github.com/flightaware/dump1090
 
-This is required for ADS-B feeders like FlightAware, PlaneFinder, FlightRadar24, ADS-B Exchange.
+This script installs the ADS-B decoder service which is required for ADS-B feeders like FlightAware, PlaneFinder, FlightRadar24, ADS-B Exchange.
 
 ```
 ./install-scripts/install-dumo1090-fa

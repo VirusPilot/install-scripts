@@ -12,10 +12,10 @@ apt install --yes git
 git clone https://github.com/VirusPilot/install-scripts.git
 ```
 
-## OGN Tracker (intended to be installed on top of a Stratux Europe Edition)
+## OGN Tracker (intended to be installed on top of a 32bit Stratux Europe Edition)
 source: https://github.com/pjalocha/esp32-ogn-tracker
 
-This script installs and sets up the development environment
+This script installs and sets up the development environment, please note: the esp32 development environment won't work on a linux-arm64 platform for now
 
 ```
 ./install-scripts/install-OGN-tracker.sh

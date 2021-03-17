@@ -46,7 +46,7 @@ source: https://github.com/flightaware/dump1090
 This script installs the ADS-B decoder service which is required for ADS-B feeders like FlightAware, PlaneFinder, FlightRadar24, ADS-B Exchange.
 
 ```
-./install-scripts/install-dumo1090-fa.sh
+./install-scripts/install-dump1090-fa.sh
 ```
 
 ## kalibrate-rtl

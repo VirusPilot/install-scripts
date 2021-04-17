@@ -7,8 +7,8 @@ echo
 read -p "Press any key to continue"
 
 cd /root
-wget https://flightaware.com/adsb/piaware/files/packages/pool/piaware/p/piaware-support/piaware-repository_4.0_all.deb
-dpkg -i piaware-repository_4.0_all.deb
+wget https://flightaware.com/adsb/piaware/files/packages/pool/piaware/p/piaware-support/piaware-repository_5.0_all.deb
+dpkg -i piaware-repository_5.0_all.deb
 
 apt update
 apt install piaware

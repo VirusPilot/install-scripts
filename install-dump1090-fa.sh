@@ -3,7 +3,7 @@
 
 cd 
 
-apt install lighttpd build-essential debhelper librtlsdr-dev pkg-config dh-systemd libncurses5-dev libbladerf-dev libhackrf-dev liblimesuite-dev -y
+sudo apt install lighttpd build-essential debhelper librtlsdr-dev pkg-config dh-systemd libncurses5-dev libbladerf-dev libhackrf-dev liblimesuite-dev -y
 
 rm -rf dump1090
 git clone https://github.com/flightaware/dump1090.git
@@ -17,4 +17,5 @@ echo
 read -p "Press any key to continue"
 
 nano /etc/default/dump1090-fa
+
 cd

@@ -1,18 +1,15 @@
 #!/bin/bash
 #set -x
 
-echo
-echo "Please note: install-rtl-sdr.sh needs to be run in advance"
-echo
-read -p "Press any key to continue or exit (Ctrl-C)"
+cd
 
-cd /root
-rm -rf /root/kalibrate-rtl
+sudo apt install libtool fftw3-dev -y
 
-apt install libtool fftw3-dev
-
+rm -rf kalibrate-rtl
 git clone https://github.com/steve-m/kalibrate-rtl.git
-cd /root/kalibrate-rtl
+cd kalibrate-rtl
 ./bootstrap && CXXFLAGS='-W -Wall -O3'
 ./configure
 make && make install
+
+cd

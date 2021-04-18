@@ -10,7 +10,7 @@ sudo apt update
 
 cd
 wget https://flightaware.com/adsb/piaware/files/packages/pool/piaware/p/piaware-support/piaware-repository_5.0_all.deb
-dpkg -i piaware-repository_5.0_all.deb
+sudo dpkg -i piaware-repository_5.0_all.deb
 rm -f piaware-repository_5.0_all.deb
 
 sudo apt install piaware

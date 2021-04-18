@@ -15,7 +15,7 @@ echo
 echo "Now the dump1090-fa config file needs to be edited, e.g. --device-index and --ppm"
 echo
 read -p "Press any key to continue"
-nano /etc/default/dump1090-fa
+sudo nano /etc/default/dump1090-fa
 
 cd
 rm -rf dump1090

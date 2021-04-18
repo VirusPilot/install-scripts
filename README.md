@@ -4,11 +4,9 @@ This is a collection of scripts to complement my other air-traffic related repos
 
 ## prepare
 ```
-login as user pi
-sudo su
 cd
-apt update
-apt install --yes git
+sudo apt update
+sudo apt install --yes git
 git clone https://github.com/VirusPilot/install-scripts.git
 ```
 

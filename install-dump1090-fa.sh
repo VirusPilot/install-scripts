@@ -5,7 +5,7 @@ sudo apt update
 sudo apt install lighttpd build-essential debhelper librtlsdr-dev pkg-config dh-systemd libncurses5-dev libbladerf-dev libhackrf-dev liblimesuite-dev -y
 
 cd
-rm -rf dump1090
+sudo rm -rf dump1090
 git clone https://github.com/flightaware/dump1090.git
 cd dump1090
 dpkg-buildpackage -b --no-sign
@@ -18,4 +18,4 @@ read -p "Press any key to continue"
 sudo nano /etc/default/dump1090-fa
 
 cd
-rm -rf dump1090
+sudo rm -rf dump1090

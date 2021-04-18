@@ -18,4 +18,4 @@ read -p "Press any key to continue"
 sudo nano /etc/default/dump1090-fa
 
 cd
-sudo rm -rf dump1090
+rm -rf dump1090*.*

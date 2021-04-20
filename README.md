@@ -16,6 +16,8 @@ source: https://github.com/pjalocha/esp32-ogn-tracker
 This script installs and sets up the development environment, please note: the esp32 development environment won't work on a linux-arm64 platform for now
 
 ```
+sudo su
+cd (change to /root as the Stratux directory is typically located here)
 ./install-scripts/install-OGN-tracker.sh
 ```
 

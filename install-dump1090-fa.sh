@@ -2,7 +2,7 @@
 #set -x
 
 sudo apt update
-sudo apt install lighttpd build-essential debhelper librtlsdr-dev pkg-config dh-systemd libncurses5-dev libbladerf-dev libhackrf-dev liblimesuite-dev -y
+sudo apt install lighttpd build-essential debhelper pkg-config dh-systemd libncurses5-dev libbladerf-dev libhackrf-dev liblimesuite-dev -y
 
 cd
 rm -rf dump1090

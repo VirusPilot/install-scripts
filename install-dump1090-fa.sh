@@ -6,7 +6,7 @@ sudo apt install librtlsdr-dev libusb-1.0-0-dev lighttpd build-essential debhelp
 
 cd
 rm -rf dump1090
-git clone -b dev https://github.com/flightaware/dump1090.git
+git clone https://github.com/flightaware/dump1090.git
 cd dump1090
 dpkg-buildpackage -b --no-sign
 sudo dpkg -i ../dump1090-fa_*.deb

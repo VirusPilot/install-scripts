@@ -10,40 +10,10 @@ sudo apt install --yes git
 git clone https://github.com/VirusPilot/install-scripts.git
 ```
 
-## OGN Tracker (intended to be installed on top of a 32bit Stratux Europe Edition)
-source: https://github.com/pjalocha/esp32-ogn-tracker
-
-This script installs and sets up the development environment, please note: the esp32 development environment won't work on a linux-arm64 platform for now
-
-```
-sudo su
-cd (change to /root as the Stratux directory is typically located here)
-./install-scripts/install-OGN-tracker.sh
-```
-
-These are the steps to compile and flash the OGN tracker (e.g. T-BEAM)
-```
-cd esp32-ogn-tracker
-nano main/config.h (enable/disable certain features like OLED or WiFi)
-source ~/esp-idf/export.sh (build preparation)
-stxstop (in case the tracker is connected to Stratux)
-make (just compiling)
-make flash (compiling and flashing)
-```
-
-## rtl-sdr
-source: https://github.com/osmocom/rtl-sdr
-
-This script installs the SDR driver library which is required for all other SDR based applications.
-
-```
-./install-scripts/install-rtl-sdr.sh
-```
-
 ## dump1090-fa
 source: https://github.com/flightaware/dump1090
 
-This script installs the ADS-B decoder service which is required for ADS-B feeders like FlightAware, PlaneFinder, FlightRadar24, ADS-B Exchange.
+This script installs the ADS-B decoder service which is required for ADS-B feeders like FlightAware, PlaneFinder, FlightRadar24, ADS-B Exchange and OpenSky.
 
 ```
 ./install-scripts/install-dump1090-fa.sh
@@ -82,4 +52,34 @@ source: https://opensky-network.org/community/projects/30-dump1090-feeder
 This is a non-profit/research ADS-B Feeder which can also receive feeds from OGN stations
 ```
 ./install-scripts/install-opensky.sh
+```
+
+## rtl-sdr libraries (obsolete)
+source: https://github.com/osmocom/rtl-sdr
+
+This script compiles and installs the SDR driver libraries from Osmocom but this is no longer required/recommended.
+
+```
+./install-scripts/install-rtl-sdr.sh
+```
+
+## OGN Tracker (intended to be installed on top of a 32bit Stratux Europe Edition)
+source: https://github.com/pjalocha/esp32-ogn-tracker
+
+This script installs and sets up the development environment, please note: the esp32 development environment won't work on a linux-arm64 platform for now
+
+```
+sudo su
+cd (change to /root as the Stratux directory is typically located here)
+./install-scripts/install-OGN-tracker.sh
+```
+
+These are the steps to compile and flash the OGN tracker (e.g. T-BEAM)
+```
+cd esp32-ogn-tracker
+nano main/config.h (enable/disable certain features like OLED or WiFi)
+source ~/esp-idf/export.sh (build preparation)
+stxstop (in case the tracker is connected to Stratux)
+make (just compiling)
+make flash (compiling and flashing)
 ```

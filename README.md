@@ -75,3 +75,11 @@ This is one of the popular ADS-B Feeders which is particularly interesting as it
 ```
 ./install-scripts/install-PlaneFinder.sh
 ```
+
+## OpenSky
+source: https://opensky-network.org/community/projects/30-dump1090-feeder
+
+This is a non-profit/research ADS-B Feeder which can also receive feeds from OGN stations
+```
+./install-scripts/install-opensky.sh
+```

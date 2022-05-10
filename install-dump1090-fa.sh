@@ -31,7 +31,7 @@ rm -rf dump1090
 rm -f dump1090-fa*.*
 
 echo
-echo "Now the dump1090-fa config file needs to be edited, e.g. --device-index and --ppm"
+echo "Now the dump1090-fa config file needs to be edited, e.g. RECEIVER_SERIAL=1090, RECEIVER_LAT=50.000 and RECEIVER_LON=10.000"
 echo
 read -p "Press any key to continue"
 sudo nano /etc/default/dump1090-fa

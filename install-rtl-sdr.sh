@@ -21,5 +21,6 @@ cmake ../ -DDETACH_KERNEL_DRIVER=ON -DINSTALL_UDEV_RULES=ON
 make
 sudo make install
 sudo ldconfig
+sudo make install-udev-rules
 cd
 rm -rf rtl-sdr

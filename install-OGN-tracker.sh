@@ -2,11 +2,11 @@
 #set -x
 
 cd /root
-apt install python3-pip libffi-dev libssl-dev -y
-pip install virtualenv
+apt update
+apt install virtualenv -y
 
 cd
-git clone -b v4.1.2 --recursive https://github.com/espressif/esp-idf.git
+git clone -b v4.3 --recursive https://github.com/espressif/esp-idf.git
 cd esp-idf
 ./install.sh
 

@@ -16,15 +16,15 @@ echo blacklist rtl2832 | sudo tee /etc/modprobe.d/rtl-sdr-blacklist.conf
 echo blacklist r820t | sudo tee -a /etc/modprobe.d/rtl-sdr-blacklist.conf
 echo blacklist rtl8xxxu | sudo tee -a /etc/modprobe.d/rtl-sdr-blacklist.conf
 
-cd
+cd || exit
 rm -rf rtl-sdr
 git clone https://github.com/osmocom/rtl-sdr.git
-cd rtl-sdr
-mkdir build && cd build
+cd rtl-sdr || exit
+mkdir build && cd build || exit
 cmake ../ -DDETACH_KERNEL_DRIVER=ON -DINSTALL_UDEV_RULES=ON
 make
 sudo make install
 sudo ldconfig
 sudo make install-udev-rules
-cd
+cd || exit
 rm -rf rtl-sdr

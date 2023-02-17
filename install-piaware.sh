@@ -8,7 +8,7 @@ read -p "Press any key to continue"
 
 sudo apt update
 
-cd
+cd || exit
 wget https://flightaware.com/adsb/piaware/files/packages/pool/piaware/p/piaware-support/piaware-repository_7.2_all.deb
 sudo dpkg -i piaware-repository_7.2_all.deb
 rm -f piaware-repository_7.2_all.deb
@@ -24,4 +24,4 @@ echo
 read -p "Press any key to continue or exit (Ctrl-C)"
 
 sudo apt install dump1090-fa
-cd
+cd || exit

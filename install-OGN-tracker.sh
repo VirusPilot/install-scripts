@@ -3,7 +3,7 @@
 
 cd /root || exit
 apt update
-apt install virtualenv -y
+apt install virtualenv git -y
 
 cd || exit
 git clone -b v4.3 --recursive https://github.com/espressif/esp-idf.git

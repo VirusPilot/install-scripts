@@ -2,7 +2,7 @@
 #set -x
 
 sudo apt update
-sudo apt install libtool fftw3-dev -y
+sudo apt install git libtool fftw3-dev -y
 
 cd || exit
 rm -rf kalibrate-rtl

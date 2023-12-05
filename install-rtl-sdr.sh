@@ -18,7 +18,7 @@ echo blacklist rtl8xxxu | sudo tee -a /etc/modprobe.d/rtl-sdr-blacklist.conf
 
 cd || exit
 rm -rf rtl-sdr
-git clone https://github.com/osmocom/rtl-sdr.git
+git clone https://github.com/VirusPilot/rtl-sdr.git
 cd rtl-sdr || exit
 mkdir build && cd build || exit
 cmake ../ -DDETACH_KERNEL_DRIVER=ON -DINSTALL_UDEV_RULES=ON

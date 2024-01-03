@@ -3,10 +3,10 @@
 
 sudo apt update
 
-ARCH=$(arch)
-if [ "$ARCH" == aarch64 ]; then # arm64
+ARCH=$(getconf LONG_BIT)
+if [[ $ARCH -eq 64 ]]; then
     wget https://opensky-network.org/files/firmware/opensky-feeder_latest_arm64.deb
-else # armhf
+else
     wget https://opensky-network.org/files/firmware/opensky-feeder_latest_armhf.deb
 fi
 sudo dpkg -i *.deb

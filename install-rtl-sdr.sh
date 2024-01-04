@@ -2,7 +2,7 @@
 #set -x
 
 sudo apt update
-sudo apt install git libusb-1.0-0-dev cmake debhelper -y
+sudo apt install git libusb-1.0-0-dev debhelper -y
 
 # install librtlsdr Debian Package from https://github.com/osmocom/rtl-sdr fork
 cd

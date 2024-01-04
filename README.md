@@ -9,13 +9,15 @@ sudo apt update
 sudo apt install --yes git
 git clone https://github.com/VirusPilot/install-scripts.git
 ```
+## install librtlsdr Debian package
+```
+./install-scripts/install-rtl-sdr.sh
+```
 
 ## OGN Tracker (intended to be installed on top of a 32bit Stratux Europe Edition)
 source: https://github.com/pjalocha/esp32-ogn-tracker
 
-This script installs and sets up the development environment, please note:
- - the esp32 development environment won't work on a **aarch64** platform for now
- - if you perform `apt full-upgrade` on a **armv7** 32bit platform, this will switch the kernel to 64bit where the esp32 development environment won't work any more (this can be fixed by adding `arm_64bit=0` to `/boot/config.txt` followed by a reboot)
+This script installs and sets up the development environment:
 
 ```
 sudo su
@@ -77,11 +79,3 @@ This is a non-profit/research ADS-B Feeder which can also receive feeds from OGN
 ./install-scripts/install-opensky.sh
 ```
 
-## rtl-sdr libraries (obsolete)
-source: https://github.com/osmocom/rtl-sdr
-
-This script compiles and installs the SDR driver libraries from Osmocom but this is no longer required/recommended.
-
-```
-./install-scripts/install-rtl-sdr.sh
-```

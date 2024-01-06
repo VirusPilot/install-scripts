@@ -1,25 +1,15 @@
 #!/bin/bash
 #set -x
 
-sudo apt update
-sudo apt install git libusb-1.0-0-dev cmake -y
-
-# install librtlsdr from https://github.com/osmocom/rtl-sdr VirusPilot fork
-cd
-sudo apt purge ^librtlsdr
-sudo rm -rvf /usr/lib/librtlsdr*
-sudo rm -rvf /usr/include/rtl-sdr*
-sudo rm -rvf /usr/local/lib/librtlsdr*
-sudo rm -rvf /usr/local/lib/aarch64-linux-gnu/librtlsdr*
-sudo rm -rvf /usr/local/include/rtl-sdr*
-sudo rm -rvf /usr/local/include/rtl_*
-sudo rm -rvf /usr/local/bin/rtl_*
-sudo rm -rvf /lib/aarch64-linux-gnu/librtlsdr*
-git clone https://github.com/VirusPilot/rtl-sdr.git
-cd rtl-sdr
-mkdir build
-cd build
-cmake ../ -DINSTALL_UDEV_RULES=ON
-make
-sudo make install
-sudo ldconfig
+ARCH=$(getconf LONG_BIT)
+if [[ $ARCH -eq 64 ]]; then
+    wget http://ftp.de.debian.org/debian/pool/main/r/rtl-sdr/librtlsdr0_0.6.0-4_arm64.deb
+    wget http://ftp.de.debian.org/debian/pool/main/r/rtl-sdr/librtlsdr-dev_0.6.0-4_arm64.deb
+    wget http://ftp.de.debian.org/debian/pool/main/r/rtl-sdr/rtl-sdr_0.6.0-4_arm64.deb
+else
+    wget http://ftp.de.debian.org/debian/pool/main/r/rtl-sdr/librtlsdr0_0.6.0-4_armhf.deb
+    wget http://ftp.de.debian.org/debian/pool/main/r/rtl-sdr/librtlsdr-dev_0.6.0-4_armhf.deb
+    wget http://ftp.de.debian.org/debian/pool/main/r/rtl-sdr/rtl-sdr_0.6.0-4_armhf.deb
+fi
+sudo dpkg -i *.deb
+rm -f *.deb

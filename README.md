@@ -14,27 +14,6 @@ git clone https://github.com/VirusPilot/install-scripts.git
 ./install-scripts/install-rtl-sdr.sh
 ```
 
-## OGN Tracker (intended to be installed on top of Stratux Europe Edition)
-source: https://github.com/pjalocha/esp32-ogn-tracker
-
-This script installs and sets up the development environment:
-
-```
-sudo su
-cd (change to /root as the Stratux directory is typically located here)
-./install-scripts/install-OGN-tracker.sh
-```
-
-These are the steps to compile and flash the OGN tracker (e.g. T-BEAM)
-```
-cd esp32-ogn-tracker
-nano main/config.h (enable/disable certain features like OLED or WiFi)
-source ~/esp-idf/export.sh (build preparation)
-stxstop (in case the tracker is connected to Stratux)
-make (just compiling)
-make flash (compiling and flashing)
-```
-
 ## dump1090-fa
 source: https://github.com/flightaware/dump1090
 

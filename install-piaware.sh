@@ -6,13 +6,12 @@ echo "Please note: besides PiAware, dump1090, fa-mlat-client, faup1090 and dump9
 echo
 read -p "Press any key to continue"
 
+cd
+wget https://www.flightaware.com/adsb/piaware/files/packages/pool/piaware/f/flightaware-apt-repository/flightaware-apt-repository_1.2_all.deb
+sudo *.deb
+rm -f *.deb
+
 sudo apt update
-
-cd || exit
-wget https://flightaware.com/adsb/piaware/files/packages/pool/piaware/p/piaware-support/piaware-repository_7.2_all.deb
-sudo dpkg -i piaware-repository_7.2_all.deb
-rm -f piaware-repository_7.2_all.deb
-
 sudo apt install piaware
 
 piaware-config allow-auto-updates yes
@@ -24,4 +23,4 @@ echo
 read -p "Press any key to continue or exit (Ctrl-C)"
 
 sudo apt install dump1090-fa
-cd || exit
+cd

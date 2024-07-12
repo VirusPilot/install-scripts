@@ -3,7 +3,7 @@
 
 sudo apt update
 
-cd || exit
-wget http://client.planefinder.net/pfclient_5.0.161_armhf.deb
-sudo dpkg -i pfclient_5.0.161_armhf.deb
-rm -f pfclient_5.0.161_armhf.deb
+cd
+wget http://client.planefinder.net/pfclient_5.1.440_arm64.deb
+sudo dpkg -i *.deb
+rm -f *.deb

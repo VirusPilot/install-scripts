@@ -9,7 +9,7 @@ sudo apt update
 sudo apt install --yes git
 git clone https://github.com/VirusPilot/install-scripts.git
 ```
-## install librtlsdr Debian package
+## compile and install librtlsdr from https://github.com/osmocom/rtl-sdr
 ```
 ./install-scripts/install-rtl-sdr.sh
 ```

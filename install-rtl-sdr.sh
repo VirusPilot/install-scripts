@@ -1,9 +1,6 @@
 #!/bin/bash
 #set -x
 
-ARCH=$(getconf LONG_BIT)
-DIST=$(lsb_release -r -s)
-
 sudo apt update
 sudo apt install git cmake libusb-1.0-0-dev debhelper -y
 
